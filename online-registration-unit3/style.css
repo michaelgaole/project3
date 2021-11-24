@@ -1,0 +1,233 @@
+/* ============================
+            BODY */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}       
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+h2{
+    color: #2d3945;
+    margin: 30px 0 5px 0;
+    padding: 0;
+}
+
+p {
+    margin: 0px 0 30px 0;
+    padding: 0;
+    color: #aeafb1;
+}
+
+hr {
+    border-style: none;
+    width: 90%;
+    height: 1.2px;
+    margin: 4px auto;
+    margin-bottom: 20px;
+    background-color: #2d3945;
+
+}
+
+legend{
+    color: #2d3945;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: 300;
+    color: #aeafb1;
+}
+
+
+/* ============================
+            HEADER */
+
+header {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #2d3945 ;
+    text-align: center;
+}
+
+/* ============================
+            BANNER */
+
+.banner {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 3px solid #2d3945;
+}
+
+/* ============================
+            MAIN */
+              
+fieldset{
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: rgba(81,100,119);
+}
+
+.fieldset1 input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 2px 10px;
+    background-color: rgba(239,240,241);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 1s ;
+
+}
+
+.fieldset1 input:last-of-type{
+    max-width: 150px;
+}
+
+.fieldset1 label {
+    display: block;
+    margin: 10px 0;
+
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    padding: 2px 10px;
+    background-color: rgba(239,240,241);
+    color: #999;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.fieldset2 div{
+    margin: 0 0 15px 0 ;
+}
+
+textarea{
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: rgba(239,240,241);
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  resize: none;
+  transition: background-color 1s ;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4ebbb5;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #4ebbb5;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+}
+
+/* ============================
+            MAIN PSEUDO*/
+
+input::-webkit-input-placeholder{
+    color:#999;
+    text-align: right;
+}
+
+.fieldset1 select:focus, input:focus, textarea:focus{
+    outline: 2px solid darkblue;
+    background-color: khaki;
+}
+
+
+/* ============================
+            FOOTER*/
+
+
+footer{
+    color: #d2d4d6;
+    text-align: center; 
+    margin: 20px auto;
+}
+
+
+/* ============================
+            MEDIA Q */
+
+
+@media (min-width: 768px){
+
+form{
+    background-color: rgba(90, 140, 155, 0.5);
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 600px;
+    margin: 0 auto;
+}    
+
+.fieldset1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    max-width: 570px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+hr,.banner{
+    max-width: 505px;
+}
+
+.fieldset1 label{
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+}
+
+.fieldset1 input{
+    display: inline-block;
+    width: 350px;
+    margin: 5px;
+}
+
+select{
+    display: inline-block;
+    width: 350px;
+    margin: 5px;
+}
+
+
+}
